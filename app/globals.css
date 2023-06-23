@@ -11,6 +11,9 @@ body {
   :root {
     --background:#121212 ;
 
+    --navigate: #040709;
+      --navigate-foreground: #ffffff;
+
     --play: #69DB72;
     --play-foreground: #000000;
 
