@@ -13,6 +13,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+    background: 'var(--background)',
+
+      play: {
+        DEFAULT: 'var(--play)',
+        foreground: 'var(--play-foreground)',
+      },
+
+        card: {
+          DEFAULT: 'var(--card)',
+          hover: 'var(--card-hover)',
+        },
+
+
+
         border: 'hsl(--var(border))',
         ring: 'hsl(--var(ring))',
         input: 'hsl(--var(input))',
