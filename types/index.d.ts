@@ -1,10 +1,9 @@
 import * as React from 'react'
 import { Icons } from '@/components/ui/icons'
 
-export type NavbarProps = {
-  items: {
+export type NavbarItems = {
     href: string
-    icon: keyof typeof Icons
+    icon?: keyof typeof Icons
     disbled?: boolean
-  }[]
 }
+

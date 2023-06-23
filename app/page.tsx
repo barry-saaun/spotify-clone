@@ -1,7 +1,10 @@
+import Navbar from "@/components/navbar";
+import { items } from "@/config/navbar";
+
 export default function Home() {
   return (
-    <main className='min-h-screen  bg-slate-900 flex '>
-      <div className=' w-full flex justify-center items-center text-center leading-none tracking-tight text-3xl font-semibold text-white'>Hello world</div>
+    <main className='w-[100vw] min-h-screen flex bg-play'>
+      <Navbar items={items}/>
       
     </main>
   )

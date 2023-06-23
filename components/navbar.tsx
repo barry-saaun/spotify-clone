@@ -2,8 +2,11 @@ import * as React from 'react'
 import Link from 'next/link'
 import { Icons } from '@/components/ui/icons'
 import { Button } from './ui/button'
-import { NavbarProps } from '@/types/index'
-import { items } from '@/config/navbar'
+import { NavbarItems } from '@/types/index'
+
+interface NavbarProps {
+  items: NavbarItems[]
+}
 
 import { cn } from '@/lib/utils'
 const Navbar: React.FC<NavbarProps> = ({ items }) => {

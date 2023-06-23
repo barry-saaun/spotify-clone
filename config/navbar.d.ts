@@ -1,9 +1,9 @@
-import { NavbarProps } from '@/types/index'
 import { Icons } from '@/components/ui/icons'
+import { NavbarItems } from '@/types'
 
-export const items: NavbarProps = [
-  { href: '/', icon: Icons.leftArrow },
-  { href: '/', icon: Icons.rightArrow },
-  { href: '/', icon: Icons.user },
-  { href: '/', icon: Icons.rightArrow }
+export const items: NavbarItems[] = [
+  { href: '/', icon: 'leftArrow' },
+  { href: '/', icon: 'rightArrow' },
+  { href: '/', icon: 'user' },
+  { href: '/', icon: 'rightArrow' }
 ]
