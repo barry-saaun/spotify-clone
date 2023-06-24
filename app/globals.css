@@ -20,11 +20,12 @@ body {
     --card: #151515;
     --card-hover: #272727;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted:#f1f5f9 ;
+    --muted-foreground: ;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
+      --popover: #ffffff;
+      --popover-foreground:#0f172a ;
+
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;

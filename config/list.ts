@@ -1,9 +1,9 @@
 import { Icons } from '@/components/ui/icons'
 import { NavbarItems } from '@/types'
 
-export const items: NavbarItems[] = [
-  { href: '/', icon: 'leftArrow' },
+export const NavItems: NavbarItems[] = [
+  { href: '/', icon: 'laptop' },
   { href: '/', icon: 'rightArrow' },
   { href: '/', icon: 'user' },
-  { href: '/', icon: 'rightArrow' }
+  { href: '/', icon: 'logo' }
 ]

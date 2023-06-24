@@ -13,24 +13,33 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-    background: 'var(--background)',
+        background: 'var(--background)',
 
-      play: {
-        DEFAULT: 'var(--play)',
-        foreground: 'var(--play-foreground)',
-      },
+
+        play: {
+          DEFAULT: 'var(--play)',
+          foreground: 'var(--play-foreground)',
+        },
 
         card: {
           DEFAULT: 'var(--card)',
           hover: 'var(--card-hover)',
         },
 
+        muted: {
+          DEFAULT: 'var(--muted)',
+          hover: 'var(--muted-foreground)',
+        },
 
+        popover: {
+          DEFAULT: 'var(--popover)',
+          hover: 'var(--popover-foreground)',
+
+        },
 
         border: 'hsl(--var(border))',
         ring: 'hsl(--var(ring))',
         input: 'hsl(--var(input))',
-        background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
           DEFAULT: 'hsl(var(--primary))',
@@ -44,22 +53,10 @@ module.exports = {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))'
         },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))'
-        },
         accent: {
           DEFAULT: 'hsl(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))'
         },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))'
-        },
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))'
-        }
       },
       borderRadius: {
         lg: `var(--radius)`,
