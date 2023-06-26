@@ -1,4 +1,3 @@
-import { Icons } from '@/components/ui/icons'
 import { NavbarItems } from '@/types'
 
 export const NavItems: NavbarItems[] = [

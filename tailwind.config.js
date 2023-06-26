@@ -15,6 +15,10 @@ module.exports = {
       colors: {
         background: 'var(--background)',
 
+        navigate: {
+          DEFAULT: 'var(--navigate)',
+          foreground: 'var(--navigate-foreground)',
+        },
 
         play: {
           DEFAULT: 'var(--play)',

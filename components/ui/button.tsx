@@ -9,13 +9,14 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: '',
-        naviagte: 'bg-navigate text-naviate-foreground',
+        navigate: 'bg-navigate text-navigate-foreground',
         link: 'underline-offset-4 hover:underline text-primary'
       },
       size: {
         default: 'h-10 py-2 px-4',
-        sm: 'h-9 px-3 rounded-md',
-        lg: 'h-11 px-8 rounded-md'
+        sm:'h-7 w-7 px-1',
+        md: 'h-9 px-3 rounded-md',
+        lg: 'h-11 px-8 rounded-md',
       }
     },
     defaultVariants: {

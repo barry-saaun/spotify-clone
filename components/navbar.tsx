@@ -4,23 +4,37 @@ import { Icons } from '@/components/ui/icons'
 import { Button } from './ui/button'
 import { NavbarItems } from '@/types/index'
 
+import { cn } from '@/lib/utils'
+
 interface NavbarProps {
   items: NavbarItems[]
 }
 
-import { cn } from '@/lib/utils'
 const Navbar = ({ items }: NavbarProps) => {
   const first = items.slice(0,2)
   const second = items.slice(2)
   return (
-    <nav className={cn('container mx-auto w-[100vw] flex flex-row')}>
-      <div className='w-full flex-row items-start justify-center '>
+    <nav className={cn('  bg-slate-700  h-10 mx-10 w-[100vw] flex flex-row justify-between')}>
+      <div className='z-10 flex items-center justify-start '>
         {first.map((item, index) => {
           const Icon = Icons[item.icon]
           return (
-        <Link key={index} href={item.href}>
-            <Button>
-                <Icon /> 
+          <Link href={item.href} key={index} className={cn('flex mx-1 ')}>
+              <Button variant='navigate' size='sm' className='rounded-full' >
+                <Icon />
+              </Button>
+            </Link>
+          )
+        })}
+
+      </div>
+      <div className='z-10 flex items-center justify-end    '>
+        {second.map((item, index) => {
+          const Icon = Icons[item.icon]
+          return (
+        <Link key={index} href={item.href} className={cn('flex mx-1 hover:scale-[1.15] duration-75')} >
+            <Button variant='navigate' size='sm' className='rounded-full '  >
+                <Icon className='opacity-75 hover:opacity-100 ' /> 
             </Button>
           </Link>
           )
