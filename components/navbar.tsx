@@ -14,8 +14,8 @@ const Navbar = ({ items }: NavbarProps) => {
   const first = items.slice(0,2)
   const second = items.slice(2)
   return (
-    <nav className={cn('  bg-slate-700  h-10 mx-10 w-[100vw] flex flex-row justify-between')}>
-      <div className='z-10 flex items-center justify-start '>
+    <nav className={cn('max-w-full sticky top-0 bg-slate-500 h-10  w-full flex flex-row justify-between backdrop-blur-sm md:backdrop-blur-lg rounded-t-lg ')}>
+      <div className='z-20 flex items-center justify-start '>
         {first.map((item, index) => {
           const Icon = Icons[item.icon]
           return (
@@ -28,11 +28,11 @@ const Navbar = ({ items }: NavbarProps) => {
         })}
 
       </div>
-      <div className='z-10 flex items-center justify-end    '>
+      <div className='z-20 flex items-center justify-end'>
         {second.map((item, index) => {
           const Icon = Icons[item.icon]
           return (
-        <Link key={index} href={item.href} className={cn('flex mx-1 hover:scale-[1.15] duration-75')} >
+        <Link key={index} href={item.href} className={cn('flex mx-1 hover:scale-[1.10] duration-75')} >
             <Button variant='navigate' size='sm' className='rounded-full '  >
                 <Icon className='opacity-75 hover:opacity-100 ' /> 
             </Button>

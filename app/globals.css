@@ -3,22 +3,25 @@
 @tailwind utilities;
 
 body {
-  padding:0;
+  padding: 0;
   margin: 0;
+  color: var(--foreground);
 }
 
 @layer base {
   :root {
     --background:#121212 ;
+    --foreground: #ffffff;  
+
 
     --navigate: #040709;
-      --navigate-foreground: #ffffff;
+    --navigate-foreground: #ffffff;
 
     --play: #69DB72;
     --play-foreground: #000000;
 
-    --card: #151515;
-    --card-hover: #272727;
+    --card: #292A2A;
+    --card-hover: #454746;
 
     --muted:#f1f5f9 ;
     --muted-foreground: ;

@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       colors: {
         background: 'var(--background)',
+        foreground: 'var(--foreground)',
 
         navigate: {
           DEFAULT: 'var(--navigate)',
@@ -41,10 +42,10 @@ module.exports = {
 
         },
 
+
         border: 'hsl(--var(border))',
         ring: 'hsl(--var(ring))',
         input: 'hsl(--var(input))',
-        foreground: 'hsl(var(--foreground))',
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))'
